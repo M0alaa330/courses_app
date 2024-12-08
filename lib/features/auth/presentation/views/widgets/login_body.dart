@@ -96,12 +96,15 @@ class LoginBody extends StatelessWidget {
                           isshow: true,
                         ),
                       ),
-                      Padding(
-                        padding:
-                            EdgeInsets.only(top: 6.h, right: 10.w, left: 220.w),
-                        child: Text("Forget Password?",
-                            style: Styles.text10
-                                .copyWith(color: AppcColors.grey96)),
+                      InkWell(
+                        onTap: () => GoRouter.of(context).push(AppRoutes.kotp),
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                              top: 6.h, right: 10.w, left: 220.w),
+                          child: Text("Forget Password?",
+                              style: Styles.text10
+                                  .copyWith(color: AppcColors.grey96)),
+                        ),
                       ),
                       Padding(
                           padding: EdgeInsets.only(
