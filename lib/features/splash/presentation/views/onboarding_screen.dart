@@ -1,3 +1,4 @@
+import 'package:courses_app/features/splash/presentation/views/widgets/onboarding_body.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -5,6 +6,6 @@ class OnboardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const OnboardingBody();
   }
 }
